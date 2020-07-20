@@ -1,0 +1,45 @@
+[
+    {
+        "id":1,
+        "Course":"React",
+        "Title":"Basics of React",
+        "Body":"React is a JavaScript library build in 2013 by the Facebook development team to make user interfaces more modular (or reusable) and easier to maintain. According to React's website, it is used to Build encapsulated components that manage their own state, then compose them to make complex UIs",
+        "Image":"react1.png"
+
+    },
+    {
+        "id":2,
+        "Course":"React",
+        "Title":"Landing template for startups",
+        "Body":"Open is a free React template created for developers who want to create a quick and professional landing page for their open source projects, online services, digital products, and more. With an aim to capture leads and email subscribers, Open offers a versatile library of sleek, minimalistic, and reusable components and elements.\nFeatures:\n* Designed for open source products and online services\n* Dark and minimalistic design\n* Fully downloadable via Github",
+        "Image":"react2.jpg"
+    },
+    {
+        "id":3,
+        "Course":"React",
+        "Title":"Best free resources to learn React",
+        "Body":"Over recent years, React has grown to become the most popular and widely-used JavaScript UI library (or framework as some might call it) out there. And with this popularity came a lot of new opportunities for both fresh and mature web developers through tons of new jobs, offers, and other React-connected tasks that are currently flooding the market.Following are the best Resources\n* Official documentation \n *Video courses\n *Learnt React\n *FreeCodeCamp",
+        "Image":"react3.jpeg"
+    },
+    {
+        "id":4,
+        "Course":"Javascript",
+        "Title":"What is Javascript",
+        "Body":"JavaScript is a scripting or programming language that allows you to implement complex features on web pages — every time a web page does more than just sit there and display static information for you to look at — displaying timely content updates, interactive maps, animated 2D/3D graphics, scrolling video jukeboxes, etc.",
+        "Image":"java1.png"
+    },
+    {
+        "id":5,
+        "Course":"Javascript",
+        "Title":"Variables in Javascript",
+        "Body":"Variable\nMost of the time, a JavaScript application needs to work with information. Here are two examples:\nAn online shop – the information might include goods being sold and a shopping cart.\nA chat application – the information might include users, messages, and much more.\nVariables are used to store this information.",
+        "Image":"java2.png"
+    },
+    {
+        "id":6,
+        "Course":"Javascript",
+        "Title":"Data Types in Javascript",
+        "Body":"A value in JavaScript is always of a certain type. For example, a string or a number.\nThere are eight basic data types in JavaScript.\n* Number\n *String \n *Boolean \n *Null \n *undefined \n *objects",
+        "Image":"java3.jpg"
+    }
+]
