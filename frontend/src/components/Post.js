@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import {Card} from 'react-bootstrap'
 
 const Post = (props) => {
 
@@ -8,32 +9,28 @@ const Post = (props) => {
     <React.Fragment>
 
 
-      <div class="card">
+      <Card>
 
         <div className="row">
 
           <div className="offset-2 col-md-6">
-            <div className="card-title">
+            <Card.Title>
               <Link to={`/${props.id}/${props.Title}`} style={{ color: 'deepblue', fontSize: "20px" }}>{props.Title.toUpperCase()}</Link>
 
-            </div>
+            </Card.Title>
 
 
-            <div className="card-body">
+            <Card.Body>
 
 
               <p>{props.Brief}</p>
 
               <Link to={`/${props.id}/${props.Title}`} className="btn btn-primary">Read more</Link>
-
-            </div>
-
+            </Card.Body>
           </div>
-
         </div>
 
-
-      </div>
+      </Card>
     </React.Fragment>
 
   )
