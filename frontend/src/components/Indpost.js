@@ -1,5 +1,5 @@
 import React from "react";
-import {Image} from "react-bootstrap";
+import {Image,Card} from "react-bootstrap";
 import axios from 'axios';
 import Navbar from './Navbar'
 
@@ -33,21 +33,17 @@ class IndividualPost extends React.Component{
             <React.Fragment>
             <Navbar></Navbar>
           <div className="row">
-              <div className="card">
+              <Card>
               <div className="offset-2 col-sm-6">
-                  <div className="card-title">
+                  <Card.Title>
         <h2>{posts.Title}</h2>
-
-                  </div>
-                  <div className="card-body">
+                  </Card.Title>
+                  <Card.Body>
         <Image src={`/${posts.Image}`} alt="image not found"/><br/><br/>
         <h5 style={{justifyContent:"center"}}>{posts.Body}</h5>
-                  </div>
-
+                  </Card.Body>
               </div>
-              
-<div></div>
-              </div>
+              </Card>
 
           </div>
         </React.Fragment>
