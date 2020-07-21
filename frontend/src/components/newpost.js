@@ -1,7 +1,6 @@
 import React from 'react'
-import { Button, Form, Navbar, Nav,Image} from 'react-bootstrap'
+import { Button, Form, Navbar, Nav,Image,Card} from 'react-bootstrap'
 import '../App.css';
-
 import axios from 'axios'
 
 
@@ -70,18 +69,17 @@ axios.post("http://localhost:2000/newpost",{newData}).then((res)=>{
                 </Navbar>
                 <div className="row">
                     <div className="offset-2 col-sm-6">
-                        <div className="card">
-                            <div className="card-header">
+                        <Card>
+                            <Card.Header>
                                 <Form>
                                 <Form.Label style={{ fontWeight: "bold", fontSize: "20px"}}>Add Course Name here..</Form.Label>
 
                                 <Form.Control as="textarea" type="text" rows="1" onChange={this.handleChange} name="course"/>
 
                                 </Form>
-                            </div>
-                            <div className="card-title">
+                            </Card.Header>
+                            <Card.Title>
                                 <Form style={{ marginLeft: "20px" }}>
-
                                     <Form.Group>
                                         <Form.Label style={{ fontWeight: "bold", fontSize: "40px", color: "gray" }}>New post title here...</Form.Label>
                                         <Form.Control as="textarea" type="text" rows="2" onChange={this.handleChange} name="title"/>
@@ -98,22 +96,18 @@ axios.post("http://localhost:2000/newpost",{newData}).then((res)=>{
                                         onChange={this.handleChange} name="image"
                                     />
                                 </Form>
-                            </div>
-                            <div className="card-body">
+                            </Card.Title>
+                            <Card.Body>
                                 <Form>
-                                    <Form.Group controlId="exampleForm.ControlTextarea1">
+                                    <Form.Group>
                                         <Form.Label style={{ fontWeight: "bold", fontSize: "20px" }} onChange={this.handleChange} value={this.state.body} name="body" >Write here Post content here..</Form.Label>
                                         <Form.Control as="textarea" rows="6"  type="text" onChange={this.handleChange} name="body"/>
                                     </Form.Group>
                                 </Form>
-
-                            </div>
-
-                        </div><br />
+                            </Card.Body>
+                        </Card><br />
                         <Button variant="primary" onClick={this.submit}>Publish</Button>
-
                     </div>
-
                 </div>
             </React.Fragment>
 
